@@ -6,8 +6,8 @@ offrant des moyens de paiements supplémentaires aux clients.
 Ceci se traduit concrètement par l'activation d'un bouton "Payer avec Vitepay" qui donne
 le possibilité au client de valider son panier et payer avec :
 
-- [x] Orange Monney
-- [x] Sama Monney
+- [x] Orange Money
+- [x] Sama Money
 - [ ] Visa/Mastercard
 - [ ] Paypal
 
