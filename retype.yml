@@ -4,10 +4,10 @@ url: https://developers.vitepay.com
 meta:
   title: " | Foundation"
 branding:
-  title: Vitepay
+  #title: Vitepay
   label: v2.0
-  #logo: static/img/logo5.svg
-  #logoDark: static/img/logo5.svg
+  logo: static/img/vitepay.svg
+  logoDark: static/img/vp-logo-white.png
 links:
 - text: Accueil
   link: https://developers.vitepay.com
