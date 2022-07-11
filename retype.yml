@@ -1,0 +1,34 @@
+input: .
+output: ./docs
+url: https://developers.vitepay.com
+meta:
+  title: " | Foundation"
+branding:
+  title: Vitepay
+  label: v2.0
+  #logo: static/img/logo5.svg
+  #logoDark: static/img/logo5.svg
+links:
+- text: Accueil
+  link: https://developers.vitepay.com
+  icon: home
+- text: Discussions
+  link: https://github.com/vitepay/vitepay-developers/discussions
+  icon: comment-discussion
+  target: _blank
+- text: Vitepay
+  link: https://www.vitepay.com/
+  icon: link-external
+  target: _blank
+- text: Github
+  link: https://github.com/vitepay/vitepay-developers
+  icon: mark-github
+  target: _blank
+
+footer:
+  copyright: "Logineo {{ year }}"
+
+#integrations:
+#  googleAnalytics:
+#    id: G-LCZPLJEKJW
+
