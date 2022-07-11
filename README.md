@@ -3,11 +3,16 @@
 Vitepay est un service qui permet aux marchands d'augmenter leur chiffre d'affaire en 
 offrant des moyens de paiements supplémentaires aux clients.
 
+!!! 
+Le service Vitepay n'est actuellement disponible qu'au **Mali**
+!!!
+
 Ceci se traduit concrètement par l'activation d'un bouton "Payer avec Vitepay" qui donne
 le possibilité au client de valider son panier et payer avec :
 
 - [x] Orange Money
 - [x] Sama Money
+- [ ] Malitel/Moov
 - [ ] Visa/Mastercard
 - [ ] Paypal
 
