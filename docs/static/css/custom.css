@@ -3,7 +3,7 @@
 
 html, body {
   font-family: Graphik, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "sans-serif", Serif;
-  font-size: 14px;
+  /*font-size: 14px;*/
   color: #1b3a52;
   padding: 0;
   margin: 0;
@@ -15,30 +15,41 @@ html, body {
   -webkit-text-size-adjust: none;
 }
 
+html,body,div,h1,h2,h3,h4,h5,p,a,span {
+  font-family: Graphik, -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "sans-serif", Serif;
+}
+
 
 #docs-app .container,
 .container {
     max-width: 1400px !important;
 }
 
+.docs-markdown h1 {
+  font-weight: bold;
+}
+
+.docs-markdown h2 {
+  margin-top: 1.5em;
+  font-size: 1.6rem;
+  letter-spacing: normal;
+}
+
+.docs-markdown h3 {
+  font-size: 1.25rem;
+}
+
+.docs-markdown h4 {
+  font-size: 1.1rem;
+}
+
+/*
 .simplebar-content,
 .doc-alert p {
     font-size: 0.9rem;
 }
 
-.docs-markdown h2 {
-    margin-top: 1.5em;
-    font-size: 1.6rem;
-    letter-spacing: normal;
-}
 
-.docs-markdown h3 {
-    font-size: 1.25rem;
-}
-
-.docs-markdown h4 {
-    font-size: 1.1rem;
-}
 
 .text-base {
     font-size: 0.95rem;
@@ -49,7 +60,7 @@ table td * {
 }
 
 #docs-sidebar-right a {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 .codeblock .simplebar-content * {
@@ -63,7 +74,8 @@ table td * {
 }
 
 aside .simplebar-content ul a span.text-sm {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     padding-top: 5px !important;
     padding-bottom: 5px !important;
 }
+*/
