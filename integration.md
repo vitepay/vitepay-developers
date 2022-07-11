@@ -68,7 +68,7 @@ Name                    | Value { class="compact" }
 `data-image`            | Logo de votre site marchand
 `data-amount`           | Montant du panier
 
-## Formulaire et "capture"
+### Formulaire et "capture"
 
 Le bouton Vitepay doit toujours être intégré dans une balise `form`.
 
@@ -139,6 +139,14 @@ export async function post({request}: RequestEvent) {
         }
     }
 }
-``` 
+```
 
-## Plugin Wordpress/Woocommerce
+
+## Intégration WooCommerce
+
+> En cours de construction
+
+## Intégration Prestashop
+
+
+> En cours de construction
