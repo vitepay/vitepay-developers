@@ -22,18 +22,3 @@ Pour voir comment fonctionne l'intégration sur votre site, vous pouvez [consult
 
 
 
-
-```javascript
- <script
-    src="https://js.vitepay.com/v2/button.umd.js"
-    data-key="pk_test_MCVVzJXVK1f65WkGT03dYabHzO0"
-    data-name="Maliba SARL"
-    data-country="ML"
-    data-method="orange_money"
-    data-currency="XOF"
-    data-currency-display="FCFA"
-    data-description="Votre panier de courses chez Maliba"
-    data-image="/img/maliba-logo.svg"
-    data-amount="500">
-</script>
-```
