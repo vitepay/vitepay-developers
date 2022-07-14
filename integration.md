@@ -37,13 +37,14 @@ La balise `<script></script>` sera remplacée par le bouton Vitepay en utilisant
 
 ```html
 
-<form action="/capture" method="POST">
+<form action="/vitepay-callback" method="POST">
     <div>....</div>
     <script
                 src="https://js.vitepay.com/v2/button.js"
                 data-key="pk_test_MCVVzJXVK1f65WkGT03dYabHzO0"
                 data-name="Maliba SARL"
                 data-country="ML"
+                data-order-id="order-234567890"
                 data-method="orange_money"
                 data-currency="XOF"
                 data-currency-display="FCFA"
@@ -59,6 +60,7 @@ La balise `<script></script>` sera remplacée par le bouton Vitepay en utilisant
 Name                    | Value { class="compact" }
 ---                     | ---
 `data-key`              | Clé publique `test` ou `live`
+`data-order-id`         | Identifiant de la commande côté Marchand
 `data-name`             | Nom de votre site marchand
 `data-country`          | Code pays de votre boutique (toujours à ML pour l'instant)
 `data-method`           | Moyen de paiement activé par défaut
@@ -79,24 +81,26 @@ Le bouton Vitepay doit toujours être intégré dans une balise `form`.
 
 Lorsque le paiement est effectué avec succès par le client, les étapes suivantes sont exécutées
 
-1. Rajout du champs `payment_id`
+1. Rajout des informations du paiement
 
-Une balise `input` est insérée dans le formulaire avec l'identifiant de la transaction.
+Deux balises `input` sont insérées dans le formulaire avec l'identifiant et l'état de la transaction.
 
 ```html
-<form action="/capture" method="POST">
+<form action="/vitepay-callback" method="POST">
     <input type="hidden" name="payment_id" value="pi_test_9892891829181"/>
+    <input type="hidden" name="payment_state" value="requires_capture|cancelled"/>
 </form>
 ```
 
-2. Submit du formulaire pour capture
+2. Submit du formulaire pour traitement côté serveur
 
 La valeur `action` du formulaire doit pointer sur un script côté serveur. Au niveau de ce script,
-vous devez utiliser votre clé `secrète` pour **capturer** le paiement. Cette opération de capture est importante
-et permet de comptabiliser la commande dans votre balance. 
+vous devez utiliser votre clé `secrète` pour **capturer** le paiement lorsque ce dernier est à l'état `requires_capture`. 
 
-Le code ci-après est un exemple de code serveur qui exécute l'opération de capture et redirige l'utilisateur
-vers une page de confirmation.
+Cette opération de capture est importante et permet de comptabiliser la commande dans votre balance. 
+
+Le code ci-après est un **exemple** de code serveur qui exécute l'opération de capture et redirige l'utilisateur
+vers une page de confirmation. 
 
 ```typescript
 
