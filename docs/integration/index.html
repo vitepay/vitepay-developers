@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.3.0.710888378066">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.3.0.711119316484">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.3.0">
@@ -32,12 +32,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=2.3.0.710888378066" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=2.3.0.711119316484" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.3.0.710888378066" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.3.0.711119316484" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=2.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.3.0.710888378066" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.3.0.710888378066" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.3.0.711119316484" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.3.0.711119316484" defer></script>
 
     
     <link rel="stylesheet" href="/static/css/custom.css" />
@@ -290,13 +290,14 @@ affichant le code source de votre site web sans poser de problème de sécurité
 La balise <code v-pre>&lt;script&gt;&lt;/script&gt;</code> sera remplacée par le bouton Vitepay en utilisant les attributs <code v-pre>data-*</code> pour personnaliser l&#x27;expérience client.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markup"><code v-pre class="language-markup">
-&lt;form action=&quot;/capture&quot; method=&quot;POST&quot;&gt;
+&lt;form action=&quot;/vitepay-callback&quot; method=&quot;POST&quot;&gt;
     &lt;div&gt;....&lt;/div&gt;
     &lt;script
                 src=&quot;https://js.vitepay.com/v2/button.js&quot;
                 data-key=&quot;pk_test_MCVVzJXVK1f65WkGT03dYabHzO0&quot;
                 data-name=&quot;Maliba SARL&quot;
                 data-country=&quot;ML&quot;
+                data-order-id=&quot;order-234567890&quot;
                 data-method=&quot;orange_money&quot;
                 data-currency=&quot;XOF&quot;
                 data-currency-display=&quot;FCFA&quot;
@@ -323,6 +324,10 @@ La balise <code v-pre>&lt;script&gt;&lt;/script&gt;</code> sera remplacée par l
 <tr>
 <td><code v-pre>data-key</code></td>
 <td>Clé publique <code v-pre>test</code> ou <code v-pre>live</code></td>
+</tr>
+<tr>
+<td><code v-pre>data-order-id</code></td>
+<td>Identifiant de la commande côté Marchand</td>
 </tr>
 <tr>
 <td><code v-pre>data-name</code></td>
@@ -372,21 +377,22 @@ La balise <code v-pre>&lt;script&gt;&lt;/script&gt;</code> sera remplacée par l
 </doc-codeblock></div>
 <p>Lorsque le paiement est effectué avec succès par le client, les étapes suivantes sont exécutées</p>
 <ol>
-<li>Rajout du champs <code v-pre>payment_id</code></li>
+<li>Rajout des informations du paiement</li>
 </ol>
-<p>Une balise <code v-pre>input</code> est insérée dans le formulaire avec l&#x27;identifiant de la transaction.</p>
+<p>Deux balises <code v-pre>input</code> sont insérées dans le formulaire avec l&#x27;identifiant et l&#x27;état de la transaction.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markup"><code v-pre class="language-markup">&lt;form action=&quot;/capture&quot; method=&quot;POST&quot;&gt;
+<pre class="language-markup"><code v-pre class="language-markup">&lt;form action=&quot;/vitepay-callback&quot; method=&quot;POST&quot;&gt;
     &lt;input type=&quot;hidden&quot; name=&quot;payment_id&quot; value=&quot;pi_test_9892891829181&quot;/&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;payment_state&quot; value=&quot;requires_capture|cancelled&quot;/&gt;
 &lt;/form&gt;</code></pre>
 </doc-codeblock></div>
 <ol start="2">
-<li>Submit du formulaire pour capture</li>
+<li>Submit du formulaire pour traitement côté serveur</li>
 </ol>
 <p>La valeur <code v-pre>action</code> du formulaire doit pointer sur un script côté serveur. Au niveau de ce script,
-vous devez utiliser votre clé <code v-pre>secrète</code> pour <strong>capturer</strong> le paiement. Cette opération de capture est importante
-et permet de comptabiliser la commande dans votre balance.</p>
-<p>Le code ci-après est un exemple de code serveur qui exécute l&#x27;opération de capture et redirige l&#x27;utilisateur
+vous devez utiliser votre clé <code v-pre>secrète</code> pour <strong>capturer</strong> le paiement lorsque ce dernier est à l&#x27;état <code v-pre>requires_capture</code>.</p>
+<p>Cette opération de capture est importante et permet de comptabiliser la commande dans votre balance.</p>
+<p>Le code ci-après est un <strong>exemple</strong> de code serveur qui exécute l&#x27;opération de capture et redirige l&#x27;utilisateur
 vers une page de confirmation.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-typescript"><code v-pre class="language-typescript">
