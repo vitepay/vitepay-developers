@@ -40,7 +40,7 @@ La balise `<script></script>` sera remplacée par le bouton Vitepay en utilisant
 <form action="/vitepay-callback" method="POST">
     <div>....</div>
     <script
-                src="https://js.vitepay.com/v2/button.js"
+                src="https://checkout.vitepay.com/v2.js"
                 data-key="pk_test_MCVVzJXVK1f65WkGT03dYabHzO0"
                 data-name="Maliba SARL"
                 data-country="ML"

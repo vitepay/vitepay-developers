@@ -21,9 +21,9 @@ leurs ventes.
 
 ## Site démo 
 
-Pour voir comment fonctionne l'intégration sur votre site, vous pouvez [consulter le site démo](https://js.vitepay.com/v2/demo).
+Pour voir comment fonctionne l'intégration sur votre site, vous pouvez [consulter le site démo](https://checkout.vitepay.com/demo).
 
-![Site démo Vitepay - https://js.vitepay.com/v2/demo](./static/img/demo-site.png)
+![Site démo Vitepay - https://checkout.vitepay.com/demo](./static/img/demo-site.png)
 
 
 
