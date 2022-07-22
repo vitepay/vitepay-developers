@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.711461717820">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.711807056910">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -32,12 +32,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=2.4.0.711461717820" rel="stylesheet" />
+    <link href="../resources/css/retype.css?v=2.4.0.711807056910" rel="stylesheet" />
 
-    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.711461717820" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../resources/js/config.js?v=2.4.0.711807056910" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.711461717820" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.711461717820" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../resources/js/lunr.js?v=2.4.0.711807056910" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../resources/js/prism.js?v=2.4.0.711807056910" defer></script>
 
     
     <link rel="stylesheet" href="/static/css/custom.css" />
@@ -280,17 +280,17 @@ serveur-à-serveur. Il est important de la conserver très loin des regards indi
 côté client et peut être intégré dans la partie frontale de votre site web. Cette clé est accessible en
 affichant le code source de votre site web sans poser de problème de sécurité à votre compte.</p>
 <p>Si vous jugez que votre clé secrète est corrompue vous pouvez accéder à votre espace marchand et générer de  nouvelles clés.</p>
-<doc-anchor-target id="intégrer-le-bouton-vitepay">
+<doc-anchor-target id="intégrer-vitepay-en-mode-popup">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#intégrer-le-bouton-vitepay">#</doc-anchor-trigger>
-        <span>Intégrer le bouton Vitepay</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#intégrer-vitepay-en-mode-popup">#</doc-anchor-trigger>
+        <span>Intégrer Vitepay en mode Popup</span>
     </h2>
 </doc-anchor-target>
 <p>Au niveau de votre page de paiement (&quot;Checkout&quot;), le code ci-après est le mode d&#x27;intégration le plus simple et rapide.
 La balise <code v-pre>&lt;script&gt;&lt;/script&gt;</code> sera remplacée par le bouton Vitepay en utilisant les attributs <code v-pre>data-*</code> pour personnaliser l&#x27;expérience client.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-markup"><code v-pre class="language-markup">
-&lt;form action=&quot;/vitepay-callback&quot; method=&quot;POST&quot;&gt;
+&lt;form action=&quot;/demo/vitepay-callback&quot; method=&quot;POST&quot;&gt;
     &lt;div&gt;....&lt;/div&gt;
     &lt;script
                 src=&quot;https://checkout.vitepay.com/v2.js&quot;
@@ -372,7 +372,7 @@ La balise <code v-pre>&lt;script&gt;&lt;/script&gt;</code> sera remplacée par l
 </doc-anchor-target>
 <p>Le bouton Vitepay doit toujours être intégré dans une balise <code v-pre>form</code>.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markup"><code v-pre class="language-markup">&lt;form action=&quot;/capture&quot; method=&quot;POST&quot;&gt;
+<pre class="language-markup"><code v-pre class="language-markup">&lt;form action=&quot;/demo/vitepay-callback&quot; method=&quot;POST&quot;&gt;
 &lt;/form&gt;</code></pre>
 </doc-codeblock></div>
 <p>Lorsque le paiement est effectué avec succès par le client, les étapes suivantes sont exécutées</p>
@@ -381,7 +381,7 @@ La balise <code v-pre>&lt;script&gt;&lt;/script&gt;</code> sera remplacée par l
 </ol>
 <p>Deux balises <code v-pre>input</code> sont insérées dans le formulaire avec l&#x27;identifiant et l&#x27;état de la transaction.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-markup"><code v-pre class="language-markup">&lt;form action=&quot;/vitepay-callback&quot; method=&quot;POST&quot;&gt;
+<pre class="language-markup"><code v-pre class="language-markup">&lt;form action=&quot;/demo/vitepay-callback&quot; method=&quot;POST&quot;&gt;
     &lt;input type=&quot;hidden&quot; name=&quot;payment_id&quot; value=&quot;pi_test_9892891829181&quot;/&gt;
     &lt;input type=&quot;hidden&quot; name=&quot;payment_state&quot; value=&quot;requires_capture|cancelled&quot;/&gt;
 &lt;/form&gt;</code></pre>
@@ -436,6 +436,12 @@ export async function post({request}: RequestEvent) {
     }
 }</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="intégrer-vitepay-en-mode-redirection">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#intégrer-vitepay-en-mode-redirection">#</doc-anchor-trigger>
+        <span>Intégrer Vitepay en mode redirection</span>
+    </h2>
+</doc-anchor-target>
 <doc-anchor-target id="intégration-woocommerce">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#intégration-woocommerce">#</doc-anchor-trigger>
