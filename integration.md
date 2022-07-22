@@ -30,14 +30,14 @@ affichant le code source de votre site web sans poser de problème de sécurité
 Si vous jugez que votre clé secrète est corrompue vous pouvez accéder à votre espace marchand et générer de  nouvelles clés.
 
 
-## Intégrer le bouton Vitepay
+## Intégrer Vitepay en mode Popup
 
 Au niveau de votre page de paiement ("Checkout"), le code ci-après est le mode d'intégration le plus simple et rapide.
 La balise `<script></script>` sera remplacée par le bouton Vitepay en utilisant les attributs `data-*` pour personnaliser l'expérience client.
 
 ```html
 
-<form action="/vitepay-callback" method="POST">
+<form action="/demo/vitepay-callback" method="POST">
     <div>....</div>
     <script
                 src="https://checkout.vitepay.com/v2.js"
@@ -75,7 +75,7 @@ Name                    | Value { class="compact" }
 Le bouton Vitepay doit toujours être intégré dans une balise `form`.
 
 ```html
-<form action="/capture" method="POST">
+<form action="/demo/vitepay-callback" method="POST">
 </form>
 ```
 
@@ -86,7 +86,7 @@ Lorsque le paiement est effectué avec succès par le client, les étapes suivan
 Deux balises `input` sont insérées dans le formulaire avec l'identifiant et l'état de la transaction.
 
 ```html
-<form action="/vitepay-callback" method="POST">
+<form action="/demo/vitepay-callback" method="POST">
     <input type="hidden" name="payment_id" value="pi_test_9892891829181"/>
     <input type="hidden" name="payment_state" value="requires_capture|cancelled"/>
 </form>
@@ -144,6 +144,8 @@ export async function post({request}: RequestEvent) {
     }
 }
 ```
+
+## Intégrer Vitepay en mode redirection
 
 
 ## Intégration WooCommerce
