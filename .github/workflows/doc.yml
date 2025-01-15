@@ -25,5 +25,7 @@ jobs:
 
       - uses: retypeapp/action-github-pages@latest
         with:
+          branch: docs
+          directory: docs
           update-branch: true
   
