@@ -9,26 +9,26 @@
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Int&#233;gration vitepay | Foundation</title>
-    <meta name="title" content="Intégration vitepay | Foundation">
+    <title>Int&#233;gration PrestaShop | Foundation</title>
+    <meta name="title" content="Intégration PrestaShop | Foundation">
     <meta name="description" content="Lorsqu'un compte marchand est créé, vous recevez une paire de clés d'API ( api_key et api_secret):">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://developers.vitepay.com/integration/">
+    <link rel="canonical" href="https://developers.vitepay.com/prestashop/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://developers.vitepay.com/integration/">
-    <meta property="og:title" content="Intégration vitepay | Foundation">
+    <meta property="og:url" content="https://developers.vitepay.com/prestashop/">
+    <meta property="og:title" content="Intégration PrestaShop | Foundation">
     <meta property="og:description" content="Lorsqu'un compte marchand est créé, vous recevez une paire de clés d'API ( api_key et api_secret):">
-    <meta property="og:image" content="https://developers.vitepay.com/static/img/vp_vitepay_doc_1.png">
+    <meta property="og:image" content="https://developers.vitepay.com/static/img/demo-popup.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://developers.vitepay.com/integration/">
-    <meta property="twitter:title" content="Intégration vitepay | Foundation">
+    <meta property="twitter:url" content="https://developers.vitepay.com/prestashop/">
+    <meta property="twitter:title" content="Intégration PrestaShop | Foundation">
     <meta property="twitter:description" content="Lorsqu'un compte marchand est créé, vous recevez une paire de clés d'API ( api_key et api_secret):">
-    <meta property="twitter:image" content="https://developers.vitepay.com/static/img/vp_vitepay_doc_1.png">
+    <meta property="twitter:image" content="https://developers.vitepay.com/static/img/demo-popup.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -246,10 +246,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="intégration-vitepay" class="break-words">
+<doc-anchor-target id="intégration-prestashop" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#intégration-vitepay">#</doc-anchor-trigger>
-        <span>Intégration vitepay</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#intégration-prestashop">#</doc-anchor-trigger>
+        <span>Intégration PrestaShop</span>
     </h1>
 </doc-anchor-target>
 <doc-anchor-target id="compte-développeur">
@@ -284,319 +284,118 @@ api_secret: MCVVzJXVK1f65WkGT1210OObHzO0</code></pre>
 </div>
 <p>Connectez-vous à votre compte et accédez à l&#x27;option &quot;Paramètres&quot; puis &quot;Kit d&#x27;intégration&quot; pour recuperer les clés d&#x27;API.</p>
 <p>Si vous jugez que votre clé secrète est corrompue vous pouvez accéder à votre espace marchand et générer de  nouvelles clés.</p>
-<doc-anchor-target id="intégrer-vitepay">
+<doc-anchor-target id="intégration-prestashop">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#intégrer-vitepay">#</doc-anchor-trigger>
-        <span>Intégrer Vitepay</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#intégration-prestashop">#</doc-anchor-trigger>
+        <span>Intégration PrestaShop</span>
     </h2>
 </doc-anchor-target>
-<p>La présente documentation est destinée aux développeurs souhaitant intégrer le paiement VitePay sur un site marchand.
-Cette documentation n&#x27;est liée à aucune technologie. Le développeur est libre de faire l&#x27;intégration avec n&#x27;importe quel outil web.</p>
-<div class="img-container"><p><figure class="content-center">
-    <img src="../static/img/vp_vitepay_doc_1.png" alt="Vue d'ensemble du paiement avec VitePay">
-    <figcaption class="caption">Vue d&#x27;ensemble du paiement avec VitePay</figcaption>
+<p>La présente documentation est destinée aux développeurs souhaitant installer et configurer Vitepay sur un site marchand Prestashop..</p>
+<p><button class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-2.5 h-6 text-xs rounded">
+    <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex mr-2" width="14" height="14" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></svg></span>
+    <span>Télécharger v-2.0</span>
+</button> Cliquer sur le bouton <code v-pre>Télécharger</code> pour télécharger le plugin Vitepay.</p>
+<doc-anchor-target id="i-installation">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#i-installation">#</doc-anchor-trigger>
+        <span>I. Installation</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="1-transfère-de-données">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-transfère-de-données">#</doc-anchor-trigger>
+        <span>1. Transfère de données</span>
+    </h4>
+</doc-anchor-target>
+<p>Le dossier Vitepay vous sera transmis.</p>
+<p>Transférer par FTP le dossier Vitepay dans le dossier modules de votre installation Prestashop.</p>
+<p><figure class="content-center">
+    <img src="../static/img/demo-popup.png" alt="">
+    <figcaption class="caption"></figcaption>
 </figure>
 </p>
-</div>
-<doc-anchor-target id="1-récupération-du-redirect_url">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-récupération-du-redirect_url">#</doc-anchor-trigger>
-        <span>1. Récupération du REDIRECT_URL</span>
-    </h3>
-</doc-anchor-target>
-<p>Depuis le site marchand, vous devez récupérer une URL de redirection de la forme <br/>
-<code v-pre>https://checkout1.vitepay.com/Ytr515</code> avant de rediriger le client vers VitePay pour effectetuer le paiement. Les étapes suivantes expliquent le mécanisme de récupération de cette URL de redirection.</p>
-<p>Pour récupérer une URL de redirection, vous devez effectuer l&#x27;appel <strong>POST</strong> suivant : <br/>
-<code v-pre>POST https://api.vitepay.com/v1/prod/payments</code></p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Avant de passer en production vous devez avoir effectué au moins un payment concluant en mode sandbox (utiliser un numero joker).<br/>
-Vous pouvez effectuer cet appel depuis un formulaire ou faire un appel serveur à serveur</p>
-        </div>
-    </div>
-</div>
-<p><code v-pre>POST</code> <a href="https://api.vitepay.com/v1/prod/payment">https://api.vitepay.com/v1/prod/payment</a></p>
-<doc-anchor-target id="header-of-request">
+<doc-anchor-target id="2-installation-de-vitepay">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#header-of-request">#</doc-anchor-trigger>
-        <span>Header of Request</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-installation-de-vitepay">#</doc-anchor-trigger>
+        <span>2. Installation de Vitepay</span>
     </h4>
 </doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">content-type: &quot;application/json&quot; | &quot;application/x-www-form-urlencoded&quot;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="body-of-request">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#body-of-request">#</doc-anchor-trigger>
-        <span>Body of Request</span>
-    </h4>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">{
-    payment: {
-        order_id: &quot;xxw&quot;,
-        language_code: &quot;fr,
-        currency_code: &quot;XOF&quot;,
-        country_code: &quot;ML&quot;,
-        description: &quot;La description de l'achat ...&quot;,
-        amount_100: 12500,
-        return_url: &quot;https://votre-site.ml/return_url&quot;,
-        decline_url: &quot;https://votre-site.ml/decline_url&quot;,
-        cancel_url: &quot;https://votre-site.ml/cancel_url&quot;,
-        callback_url: &quot;https://votre-site.ml/callback_url&quot;,
-        buyer_ip_adress: &quot;192.168.1.2&quot;, // IP du client qui effectue le paiement
-        email: &quot;client@email.ml&quot;
-    },
-    redirect: 0 | 1,
-    api_key: &quot;KMyjxAdJdtVk4GmcX90992sL25abPc&quot;,
-    hash: &quot;KcX90992sM5MyjxAtVk4cX9dGmyjxAdM5MJd0992sL2abPc&quot;
-}</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="description-of-the-body">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#description-of-the-body">#</doc-anchor-trigger>
-        <span>Description of the Body</span>
-    </h4>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
-<thead>
-<tr>
-<th>PARAMÈTRE</th>
-<th>OBLIGATOIRE</th>
-<th>TYPE</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code v-pre>payment[order_id]</code></td>
-<td>OUI</td>
-<td>string</td>
-<td>Le numéro de commande sur le site marchand. Les numéros de commande doivent être uniques sur le site marchand car VitePay n&#x27;accepte pas les doublons à ce niveau.</td>
-</tr>
-<tr>
-<td><code v-pre>payment[language_code]</code></td>
-<td>OUI</td>
-<td>string</td>
-<td>Langue dans laquelle la transaction est effectuée. Par défault: <code v-pre>fr</code> (français). Les codes supportés sont: fr, en</td>
-</tr>
-<tr>
-<td><code v-pre>payment[currency_code]</code></td>
-<td>OUI</td>
-<td>string</td>
-<td>La devise internationale (ISO-4217) de la transaction en cours. Par défault: <code v-pre>XOF</code> ( Communauté Financière Africaine (BCEAO) )</td>
-</tr>
-<tr>
-<td><code v-pre>payment[country_code]</code></td>
-<td>OUI</td>
-<td>string</td>
-<td>Le code ISO du pays du site marchant. Valeur par défaut: <code v-pre>ML</code> (Mali)</td>
-</tr>
-<tr>
-<td><code v-pre>payment[description]</code></td>
-<td>OUI</td>
-<td>string</td>
-<td>Une description de l&#x27;achat effectué par le client (160 caractères au maximum).</td>
-</tr>
-<tr>
-<td><code v-pre>payment[amount_100]</code></td>
-<td>OUI</td>
-<td>integer</td>
-<td>Le montant total de la transaction (x100). Ex: Si le montant du panier est de 12500 XOF, la valeur transmise à ce niveau doit être <code v-pre>payment[amount_100] = 1250000</code></td>
-</tr>
-<tr>
-<td><code v-pre>payment[return_url]</code></td>
-<td>OUI</td>
-<td>string</td>
-<td>URL de votre site marchand vers laquelle VitePay redirigera le client si le paiement est effectué avec succès.</td>
-</tr>
-<tr>
-<td><code v-pre>payment[decline_url]</code></td>
-<td>OUI</td>
-<td>string</td>
-<td>URL de votre site marchand vers laquelle VitPay redirigera le client si le paiement est rejeté.</td>
-</tr>
-<tr>
-<td><code v-pre>payment[cancel_url]</code></td>
-<td>OUI</td>
-<td>string</td>
-<td>URL de votre site marchand vers laquelle VitePay redirigera le client si ce(tte) dernie(ère) annule le paiement</td>
-</tr>
-<tr>
-<td><code v-pre>payment[callback_url]</code></td>
-<td>OUI</td>
-<td>string</td>
-<td>Cette URL sera utilisé à l&#x27;étape 5 pour confirmer la transaction.</td>
-</tr>
-<tr>
-<td><code v-pre>payment[buyer_ip_adress]</code></td>
-<td>NON</td>
-<td>string</td>
-<td>L&#x27;adresse IP du client qui effectue le paiement.</td>
-</tr>
-<tr>
-<td><code v-pre>payment[email]</code></td>
-<td>NON</td>
-<td>string</td>
-<td>Email du client qui effectue la transaction.</td>
-</tr>
-<tr>
-<td><code v-pre>redirect</code></td>
-<td>OUI</td>
-<td>integer</td>
-<td>Poisitionnez cette valeur à <code v-pre>1</code> lors d&#x27;un appel depuis un formulaire pour rediriger automatique le client vers la page de paiement.<br/>Transmettez la valeur <code v-pre>0</code> (valeur par défaut) lors d&#x27;un appel serveur-à-serveur. Vous devrez par la suite faire la redirection du client depuis votre site marchand vers l&#x27;url transmise par VitePay.</td>
-</tr>
-<tr>
-<td><code v-pre>api_key</code></td>
-<td>OUI</td>
-<td>string</td>
-<td>Cette information vous est transmise par VitePay lors de l&#x27;enregistrement de votre site marchand. Contactez l&#x27;adminsitrateur du site pour lequel vous souhaitez faire l&#x27;intégration pour récupérer cette information.</td>
-</tr>
-<tr>
-<td><code v-pre>hash</code></td>
-<td>OUI</td>
-<td>string</td>
-<td>Le hash est une valeur calculée avec la formule suivante : <br/><code v-pre>SHA1(UPPERCASE(&quot;order_id;amount_100;currency_code;callback_url;api_secret&quot;))</code><br/>   1. Concaténez les différentes valeurs <code v-pre>order_id</code>, <code v-pre>amount_100</code>, <code v-pre>currency_code</code>, <code v-pre>callback_url</code> et <code v-pre>api-secret</code> en utilisant <code v-pre>;</code> (point-virgule) comme séparateur<br/>   2. Faites passer toute la chaîne en majuscules <br/>   3. Appliquer la fonction <code v-pre>SHA1(SHA1)</code><br/><br/><code v-pre>api_secret</code> : Cette information vous est transmise par VitePay lors de l&#x27;enregistrement de votre site marchand. Contactez l&#x27;adminsitrateur du site pour lequel vous souhaitez faire l&#x27;intégration pour récupérer cette information.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>En cas d&#x27;erreur lors de cet appel, VitePay retournera des informations pour vous aider à modifier votre code.<br/>
-Si tous les paramètres attendus sont présents et valides, vous recevez une URL de la forme <code v-pre>https://checkout1.vitepay.com/Ytr515</code> à utiliser à l&#x27;étape suivante.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Vous pouvez simuler un paiement en mode sandbox sans passer par orange money en utilisant les numéro suivants:<br/>
-<code v-pre>77000001</code> pour confirmer le paiement.<br/>
-<code v-pre>77000009</code> pour annuler le paiement.</p>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="2-redirection-vers-vitepay">
+<p>Installer Vitepay dans l&#x27;interface Administration de Prestashop en cliquant sur le menu <strong>MODULES</strong> puis <strong>Paiement</strong>
+<figure class="content-center">
+    <img src="../static/img/demo-popup.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+Et enfin sur le bouton <strong>Installer</strong>.
+<figure class="content-center">
+    <img src="../static/img/demo-popup.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="ii-configuration">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-redirection-vers-vitepay">#</doc-anchor-trigger>
-        <span>2. Redirection vers VitePay</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ii-configuration">#</doc-anchor-trigger>
+        <span>II. Configuration</span>
     </h3>
 </doc-anchor-target>
-<p>L&#x27;URL sécurisée retournée à l&#x27;étape précédente est utilisée pour rediriger l&#x27;utilisateur vers le site VitePay pour continuer la transaction et effectuer le paiement. Il s&#x27;agit d&#x27;une redirection HTTP classique.</p>
-<doc-anchor-target id="3-confirmation-du-paiement">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-confirmation-du-paiement">#</doc-anchor-trigger>
-        <span>3. Confirmation du paiement</span>
-    </h3>
+<doc-anchor-target id="1-configuration-de-vitepay">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-configuration-de-vitepay">#</doc-anchor-trigger>
+        <span>1. Configuration de Vitepay</span>
+    </h4>
 </doc-anchor-target>
-<p>Le client est donc redirigé sur le site VitePay pour :</p>
+<p>Apres l&#x27;installation de Vitepay, nous allons configurer Vitepay pour cela cliquer sur le bouton <strong>Configurer</strong>.
+<figure class="content-center">
+    <img src="../static/img/demo-popup.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="2-les-différents-composants-du-formulaire-vitepay">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-les-différents-composants-du-formulaire-vitepay">#</doc-anchor-trigger>
+        <span>2. Les différents composants du formulaire Vitepay</span>
+    </h4>
+</doc-anchor-target>
+<p>Vitepay est composé de plusieurs éléments qui sont : <code v-pre>Vitepay API key</code>, <code v-pre>Vitepay API secret</code>, <code v-pre>Vitepay API signature</code>, <code v-pre>Merchant Locale</code>, <code v-pre>Merchant Currency</code>, <code v-pre>Merchant Country</code>, <code v-pre>Transaction Server</code>
+<figure class="content-center">
+    <img src="../static/img/demo-popup.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <ul>
-<li>Séléctionner la méthode de paiement;</li>
-<li>Renseigner le numéro de téléphone à utiliser pour effectuer le paiement ;</li>
-<li>Confirmer avoir pris connaissance des condiditions générales d&#x27;utilisation ;</li>
-<li>Valider la demande de paiement.</li>
+<li><strong>Mode :</strong> il existe deux modes:</li>
+<li><strong>le Mode Test</strong> qui permet de faire une simulation du mode de paiement Vitepay sans passé par Orange money c&#x27;est-à-dire tester tout le processus sans que le prix du produit choisi ne soit soustrait de la somme de votre compte Orange money. Vous pouvez choisir de confirmer le paiement en saisissant le 77000001 comme numéro de téléphone lors du paiement ou le 77000009 pour annuler le paiement.</li>
+<li><strong>le Mode Live</strong> une fois choisi vous permet de faire des achats en ligne avec Orange money.</li>
+<li><strong>API key, Vitepay API secret et API signature</strong> vous seront donnés et seront utilisés une fois par configuration c&#x27;est-à-dire à chaque nouvelle configuration de Vitepay, vous aurez un nouveau API key, API secret et API signature de Vitepay.</li>
+<li><strong>Langue, Pays et Devise</strong> sont des champs à remplir avec un nom normalisé par ISO (Organisation Internationale de Normalisation).</li>
+<li><strong>Langue :</strong> pour la langue (fr pour le français).</li>
+<li><strong>Pays :</strong> pour le pays (ML pour le Mali).</li>
+<li><strong>Devise :</strong> pour la monnaie (XOF pour le FCFA).</li>
 </ul>
-<doc-anchor-target id="4-envoi-de-la-demande-de-paiement-sur-le-téléphone-du-client">
+<p>Lors du paiement, vous pourrez choisir le mode d&#x27;affichage du texte, logo de Vitepay et d&#x27;Orange money à l&#x27;aide des éléments ci-dessous:</p>
+<ul>
+<li><strong>PayNow Text</strong> permet de changer le texte qui va s&#x27;afficher lors du paiement</li>
+<li><strong>PayNow Logo</strong> permet d&#x27;afficher ou non le logo Vitepay.</li>
+<li><strong>PayNow logo Align</strong> permet d&#x27;aligner le logo Vitepay à gauche ou à droite une fois le logo affiché.
+Sauvegarder les informations saisies en cliquant sur le bouton <strong>Save</strong>.</li>
+</ul>
+<doc-anchor-target id="iii-tester-vitepay">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-envoi-de-la-demande-de-paiement-sur-le-téléphone-du-client">#</doc-anchor-trigger>
-        <span>4. Envoi de la demande de paiement sur le téléphone du client</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#iii-tester-vitepay">#</doc-anchor-trigger>
+        <span>III. Tester Vitepay</span>
     </h3>
 </doc-anchor-target>
-<p>VitePay fait appel au service du partenaire (méthode de paiement séléctionnée) pour transmettre la demande de paiement au numéro de téléphone fourni par le client.
-Une menu USSD permet au client de continuer la transaction sur son téléphone et de confirmer ou annuler le paiement.</p>
-<doc-anchor-target id="5-confirmation-de-la-transaction-sur-votre-site-marchand">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#5-confirmation-de-la-transaction-sur-votre-site-marchand">#</doc-anchor-trigger>
-        <span>5. Confirmation de la transaction sur votre site marchand</span>
-    </h3>
-</doc-anchor-target>
-<p>Quelle que soit le choix effectué par le client, nous en informons le site marchand en faisant un appel : <code v-pre>POST</code> au <code v-pre>callback_url</code> (voir <code v-pre>payment[callback_url]</code> transmis lors de l&#x27;appel pour la récupération du REDIRECT_URL).</p>
-<p>Cet appel server-à-server contient les paramètres suivants :</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="compact">
-<thead>
-<tr>
-<th>PARAMÈTRE</th>
-<th>Valeur</th>
-<th>DESCRIPTION</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code v-pre>authenticity</code></td>
-<td>string</td>
-<td>Cette information permet de sécuriser la communication serveur-à-serveur. En effet, vous devez recalculer cette chaîne au niveau de votre intégration et la comparer à celle que nous vous transmettons. Ne modifier votre panier que s&#x27;il y a une correspondance parfaite.<br/><br/>Littéralement, <code v-pre>authenticity</code> est la valeur <strong>SHA1</strong> de la concaténation du <strong>numéro de comande, montant de de la transaction (x100), devise et signature</strong> du site marchand.<br/><code v-pre>authenticity = SHA1(&quot;order_id;amount_100;currency_code;api_secret&quot;)</code><br/><br/><code v-pre>order_id</code> doit être en masjucules lorsqu&#x27;il ne s&#x27;agit pas d&#x27;une valeur numérique <br/><code v-pre>currency_code</code> doit être en lettre masucules <br/><code v-pre>SHA1</code> Le résultat du hashage SHA1 doit est transformé en majuscules</td>
-</tr>
-<tr>
-<td><code v-pre>order_id</code></td>
-<td>string</td>
-<td>Numéro de la commande sur le site marchand transmis à VitePay à l&#x27;<strong>Etape 1</strong></td>
-</tr>
-<tr>
-<td><code v-pre>success</code> ou <code v-pre>failure</code></td>
-<td><code v-pre>success=1</code> ou <code v-pre>failure=1</code></td>
-<td>Statut du paiement effectué depuis le téléphone du client.</td>
-</tr>
-<tr>
-<td><code v-pre>sandbox</code></td>
-<td><code v-pre>1</code> ou <code v-pre>0</code></td>
-<td>Pour détecter les paiements en mode sandbox</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Vous devez donc intégrer au niveau du site marchand le code nécessaire pour traiter ce callback server-à-serveur et effectuer les opérations suivantes :</p>
-<ol>
-<li>Recalculer la signature</li>
-<li>Compagner la signature calculée à celle transmise par VitePay</li>
-<li>Vérifier que le numéro de commande est valide et que la transaction est toujours ouverte</li>
-<li>Mettre à jour le panier en fonction du statut transmis (success=1 ou failure=1)</li>
-<li>Retourner une réponse JSON à VitePay pour confirmer ou infirmer le traitement de l&#x27;opération sur le site marchand :<br/>
-Dans le cas d&#x27;une confirmation, la réponse attendue est :</li>
-</ol>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">{ status:&quot;1&quot; }</code></pre>
-</doc-codeblock></div>
-<p>Dans le cas contraire , la réponse attendue est :</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">{ 
-    status: &quot;0&quot;,
-    message: &quot;Raison pour laquelle le traitement est rejeté.&quot; 
-} </code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="6-notification-du-client">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#6-notification-du-client">#</doc-anchor-trigger>
-        <span>6. Notification du client</span>
-    </h3>
-</doc-anchor-target>
-<p>Le client reçoit un message sur son téléphone pour confirmer la transaction et effectuer le mouvements de fonds dans le cas d&#x27;une transaction concluante ou alors un message d&#x27;annulation de la transaction</p>
-<doc-anchor-target id="7-redirection-finale">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#7-redirection-finale">#</doc-anchor-trigger>
-        <span>7. Redirection finale</span>
-    </h3>
-</doc-anchor-target>
-<p>Site la transaction est concluante, VitePay redirige le client vers le site du marchand à l&#x27;adresse <code v-pre>return_url</code>.<br/>
-Site la transaction n&#x27;est pas concluante, VitePay redirige le client vers le site du marchand à l&#x27;adresse <code v-pre>decline_url</code>.</p>
+<p>Pour vérifier si le plugin <strong>Vitepay</strong> a été bien installé et configuré dans Pestashop, commander un produit sur l&#x27;interface du site et lors du paiement choisir Vitepay.
+<figure class="content-center">
+    <img src="../static/img/demo-popup.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Vous serez redirigé vers la page Vitepay pour compléter la procédure d&#x27;achat effectué à travers le service Orange money.
+<figure class="content-center">
+    <img src="../static/img/demo-popup.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -606,20 +405,20 @@ Site la transaction n&#x27;est pas concluante, VitePay redirige le client vers l
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../prestashop/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../direct-api/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Intégration Presta​Shop</span>
+                                                <span class="block mt-1">Intégration Direct API</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../wordpress/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../integration/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Intégration Wordpress - Woo​Commerce</span>
+                                                <span class="block mt-1">Intégration vitepay</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -663,6 +462,6 @@ Site la transaction n&#x27;est pas concluante, VitePay redirige le client vers l
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Intégration vitepay", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Intégration PrestaShop", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
