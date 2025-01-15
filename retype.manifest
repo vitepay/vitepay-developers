@@ -1,0 +1,204 @@
+{
+  "version": "3.6.0",
+  "created": "2025-01-15T12:05:02Z",
+  "files": [
+    {
+      "path": ".nojekyll"
+    },
+    {
+      "path": "404.html"
+    },
+    {
+      "path": "CNAME"
+    },
+    {
+      "path": "direct-api/index.html"
+    },
+    {
+      "path": "favicon.ico"
+    },
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "integration/index.html"
+    },
+    {
+      "path": "prestashop/index.html"
+    },
+    {
+      "path": "resources/css/retype.css"
+    },
+    {
+      "path": "resources/fonts/Inter-italic-latin-var.woff2"
+    },
+    {
+      "path": "resources/fonts/Inter-roman-latin-var.woff2"
+    },
+    {
+      "path": "resources/js/config.js"
+    },
+    {
+      "path": "resources/js/lunr.js"
+    },
+    {
+      "path": "resources/js/retype.js"
+    },
+    {
+      "path": "resources/js/search.json"
+    },
+    {
+      "path": "resources/lunr.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/mermaid.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/prism.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/retype.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/retype.LICENSE.txt"
+    },
+    {
+      "path": "robots.txt"
+    },
+    {
+      "path": "sitemap.xml.gz"
+    },
+    {
+      "path": "static/css/bootstrap-grid.css"
+    },
+    {
+      "path": "static/css/custom.css"
+    },
+    {
+      "path": "static/favicon.ico"
+    },
+    {
+      "path": "static/fonts/graphik/font.css"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-300-light-italic.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-500-mediumitalic.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-600-semibold-italic.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-700-bold-italic.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-800-black-italic.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-900-super-italic.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-900-super.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-black.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-bold.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-extralight-italic.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-extralight.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-light.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-medium.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-preview.png"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-regular.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-regularitalic.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-semibold.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-thin-italic.otf"
+    },
+    {
+      "path": "static/fonts/graphik/graphik-thin.otf"
+    },
+    {
+      "path": "static/img/demo-popup.png"
+    },
+    {
+      "path": "static/img/demo-site-.png"
+    },
+    {
+      "path": "static/img/demo-site.png"
+    },
+    {
+      "path": "static/img/developers_b.svg"
+    },
+    {
+      "path": "static/img/developers.svg"
+    },
+    {
+      "path": "static/img/favicon-16x16.png"
+    },
+    {
+      "path": "static/img/favicon-32x32.png"
+    },
+    {
+      "path": "static/img/favicon.ico"
+    },
+    {
+      "path": "static/img/info-cyan.svg"
+    },
+    {
+      "path": "static/img/oss_logo.png"
+    },
+    {
+      "path": "static/img/vitepay_white.svg"
+    },
+    {
+      "path": "static/img/vitepay-api.svg"
+    },
+    {
+      "path": "static/img/vitepay-logo.png"
+    },
+    {
+      "path": "static/img/vitepay-white.svg"
+    },
+    {
+      "path": "static/img/vitepay.png"
+    },
+    {
+      "path": "static/img/vitepay.svg"
+    },
+    {
+      "path": "static/img/vp_developers.png"
+    },
+    {
+      "path": "static/img/vp_vitepay_doc_1.png"
+    },
+    {
+      "path": "static/img/vp-logo-white-sh.png"
+    },
+    {
+      "path": "static/img/vp-logo-white.png"
+    },
+    {
+      "path": "wordpress/index.html"
+    }
+  ]
+}

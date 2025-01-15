@@ -7,18 +7,23 @@ on:
 
 jobs:
   publish:
-    name: Build docs
+    name: Publish to docs branch
+
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: retypeapp/action-build@v2
-      #- name: Update container width
-      #  run: |
-      #    ls -alr /tmp/tmp.*
-      #    sed -i -e "s|1800px|1400px|g" /tmp/tmp.*/resources/css/retype.css
-      - uses: retypeapp/action-github-pages@v2
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v1
         with:
-          branch: docs
-          directory: docs
+          dotnet-version: 7.0.x
+
+      - uses: retypeapp/action-build@latest
+
+      - uses: retypeapp/action-github-pages@latest
+        with:
           update-branch: true
   
